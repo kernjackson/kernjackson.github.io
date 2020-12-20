@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>KERNTRONICS LLC</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: verdana;
+    }
+
+    html {
+      font-size: calc(0.7em + 1vw)
+    }
+
+    /* Responsive layout - makes a one column-layout instead of a two-column layout */
+    /* @media (max-width: 800) {
+
+      .flex-item-right,
+      .flex-item-left {
+        flex: 100%;
+      }
+
+    } */
+
+    .flex-logo {
+      color: orange;
+    }
+
+    h1 {
+      color: orange;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
+      /* background-color: blueviolet; */
+    }
+
+    .flex-container2 {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1em 1em 1em 1em;
+    }
+
+    #green {
+      background-color: rgb(52, 226, 43);
+    }
+
+    #purple {
+      background-color: blueviolet;
+    }
+
+    /* .flex-item-left {
+      flex: 50%;
+    }
+
+    .flex-item-right {
+      flex: 50%;
+    } */
+
+    @media (prefers-color-scheme: light) {
+      body {
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+      }
+
+      a {
+        color: rgb(115, 115, 115);
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #333;
+        color: rgb(255, 255, 255);
+      }
+
+      a {
+        color: rgb(228, 228, 228);
+      }
+    }
+
+    #kern,
+    #tronics {
+      text-align: center;
+      font-family: verdana;
+      font-size: 34vw;
+
+      font-weight: 700;
+      color: orange;
+      width: 100%;
+      /* display: block; */
+    }
+
+    #tronics {
+      margin-top: -0.5em;
+      font-size: 15vw;
+      padding-bottom: .5em;
+    }
+
+    /* #menu {
+      font-size: 7.5vw;
+    } */
+
+    /* img {
+      width: 80vw;
+      max-width: 10cm;
+      border-radius: 0.5cm;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    } */
+
+    img {
+      border-radius: 1cm;
+      margin: auto;
+    }
+
+    #app {
+      padding: 2em;
+      text-align: center;
+      margin: auto;
+    }
+
+    #contact,
+    #privacy,
+    #blog {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 800px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="apps">
+    <div class="flex-logo">
+      <div id="kern">kern</div>
+      <div id="tronics">
+        tronics llc
+
+        <!-- <p id="menu">
+          <a href="#apps">Apps</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </p> -->
+
+      </div>
+    </div>
+
+    <div class="flex-container2">
+
+      <div id="app">
+        <a href="https://testflight.apple.com/join/AJzHWXkA">
+          <img src="images/http-status.png" alt="HTTP Status TestFlight Link">
+          <h2>HTTP Status</h2>
+        </a>
+      </div>
+
+      <div id="app">
+        <a href="https://testflight.apple.com/join/W5NjuUCk">
+          <img src="images/lights-on-off.png" alt="lights-on-off.png" alt="Lights On Off TestFlight Link">
+          <h2>Lights On Off</h2>
+        </a>
+      </div>
+
+      <div id="app">
+        <a href="https://testflight.apple.com/join/tmpECD6h">
+          <img src="images/icon-creator.png"Icon Creator">
+          <h2>Icon Creator</h2>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- <div id="blog">
+    <h1>Blog</h1>
+
+    <p>Hello, world! From time to time we'll make announcements here.</p>
+
+  </div> -->
+
+  <div id="privacy">
+
+    <h1>Privacy Policy</h1>
+
+    <h2>Philosophy</h2>
+    <ol>
+      <li>You have a fundamental right to privacy.</li>
+      <li>Your data is yours (not ours).</li>
+    </ol>
+
+    <h2>Policies</h2>
+    <ol>
+      <li>Currently we do not collect any data.</li>
+      <li>We will only collect data with your consent.</li>
+      <li>We will retain information only for as long as needed.</li>
+      <li>We will not share information with 3rd parties unless required by law.</li>
+      <li>We do not knowingly collect data about children.</li>
+      <li>This site will be updated as our policies evolve.</li>
+    </ol>
+
+    <p>Contact us at
+      <a href="mailto: help@kerntronics.com">help@kerntronics.com</a> with any questions you may about our apps or
+      policies.
+    </p>
+  </div>
+
+  <div id="privacy">
+
+    <h1>Contact Us</h1>
+
+    <a href="mailto: help@kerntronics.com">help@kerntronics.com</a>
+    <a href="http://twitter.com/kern">@kern</a>
+
+  </div>
+
+
+  <!-- <div class="flex-container" id="purple">
+    <div class="flex-item-left">
+      <img src="http-status.png" alt="HTTP Status">
+      <h1>HTTP Status Codes</h1>
+      <h2>Pocket Reference</h2>
+    </div>
+    <div class="flex-item-right">
+      <img src="AppStoreA-6-5.png" alt="Icon Press Screenshot">
+    </div>
+  </div> -->
+
+  <!-- <div class="flex-container" id="purple">
+    <div class="flex-item-left">
+      <h1>HTTP Status Codes</h1>
+      <h2>Pocket Reference</h2>
+    </div>
+    <div class="flex-item-right">
+      <img src="AppStoreA-6-5.png" alt="Icon Press Screenshot">
+    </div>
+  </div>
+
+  <div class="flex-container" id="green">
+    <div class="flex-item-left">
+      <h1>Lights On - Off</h1>
+      <h2>Classic puzzle game</h2>
+
+    </div>
+    <div class="flex-item-right">
+      <img src="AppStoreA-6-5.png" alt="Icon Press Screenshot">
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div class="flex-item-left">
+      <h1>SNEK</h1>
+      <h2>Snake game for your wrist</h2>
+
+    </div>
+    <div class="flex-item-right">
+      <img src="AppStoreA-6-5.png" alt="Icon Press Screenshot">
+    </div>
+  </div>
+</div> -->
+
+
+  <!-- <div id="blog">
+
+    </div>
+
+    
+  -->
+
+</body>
+
+</html>
