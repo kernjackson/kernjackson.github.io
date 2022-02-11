@@ -5,172 +5,178 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <title>KERNTRONICS LLC</title>
-
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@kern">
+  <meta name="twitter:image" content="img/home-thumbnail.png">
+  <meta property="og:image" content="img/home-thumbnail.png">
+  
+  <title>kerntronics llc</title>
+  
   <style>
     * {
       box-sizing: border-box;
       font-family: verdana;
     }
-
+    
     html {
       font-size: calc(0.7em + 1vw)
     }
-
+    
     .flex-logo {
       color: orange;
     }
-
+    
     h1 {
       font-size: calc(2em + 1vw);
       color: orange;
     }
-
+    
     .flex-container {
       display: flex;
       flex-wrap: wrap;
       padding: 1em 1em 1em 1em;
     }
-
+    
     @media (prefers-color-scheme: light) {
       body {
         background: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
       }
-
+      
+      h2 {
+        color: rgb(53, 53, 53);
+      }
+      
       a {
-        color: rgb(115, 115, 115);
+        /* color: rgb(115, 115, 115); */
+        color: orange;
       }
     }
-
+    
     @media (prefers-color-scheme: dark) {
       body {
         background: #333;
         color: rgb(255, 255, 255);
       }
-
+      
+      h2 {
+        color: rgb(255, 255, 255);
+      }
+      
       a {
-        color: rgb(228, 228, 228);
+        /* color: rgb(228, 228, 228); */
+        color: orange;
       }
     }
-
+    
     #kern,
     #tronics {
+      /* margin-top: -0.2em; */
+      /* padding-top: -1.0em; */
       text-align: center;
       font-family: verdana;
       font-size: 34vw;
-
+      
       font-weight: 700;
       color: orange;
       width: 100%;
     }
-
+    
     #tronics {
       margin-top: -0.5em;
       font-size: 15vw;
-      padding-bottom: .5em;
+      padding-bottom: 0em;
     }
-
+    
     img {
       border-radius: 1cm;
       margin: auto;
     }
-
+    
     #app {
-      padding: 2em;
+      padding: 1em;
       text-align: center;
       margin: auto;
     }
-
+    
+    #menu {
+      /* padding: 1em; */
+      padding-top: 1em;
+      padding-right: 1em;
+      text-align: right;
+      margin: auto;
+    }
+    
     #contact,
     #privacy,
     #services,
     #blog {
       margin-left: auto;
       margin-right: auto;
-      max-width: 800px;
+      max-width: 50em;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+
+    .highlight {
+      color: orange;
     }
   </style>
-
+  
 </head>
 
 <body>
-
-  <div id="apps">
-    <div class="flex-logo">
-      <div id="kern">kern</div>
-      <div id="tronics">
-        tronics llc
-      </div>
-    </div>
-
-    <div class="flex-container">
-      
-      <div id="app">
-       <a href="https://testflight.apple.com/join/RReU00uS">
-          <img src="images/SpacePod.png" alt="SpacePod TestFlight">
-        </a>
-      </div>
-
-      <div id="app">
-        <a href="https://testflight.apple.com/join/W5NjuUCk">
-          <img src="images/lights-on-off.png" alt="Lights On Off TestFlight">
-        </a>
-      </div>
-
-      <div id="app">
-        <a href="https://testflight.apple.com/join/tmpECD6h">
-          <img src="images/icon-creator.png" alt="Icon Creator TestFlight">
-        </a>
-      </div>
-
-      <div id="app">
-        <a href="https://testflight.apple.com/join/AJzHWXkA">
-          <img src="images/http-status.png" alt="HTTP Status TestFlight">
-        </a>
-      </div>                                              
-
+  
+  <div class="flex-logo">
+    <div id="kern">kern</div>
+    <div id="tronics">
+      tronics llc
     </div>
   </div>
-
-  <div id="services">
-    <h1>Services</h1>
-    <p>
-        Don’t hesitate to contact me if you need help with architecture, design, development, automation, or testing for your iOS, iPadOS, macOS, tvOS, or watchOS app.
-    </p>
+  
+  <div class="flex-container">
+    
+    <div id="app">
+      <a href="https://testflight.apple.com/join/RReU00uS">
+        <img src="img/SpacePod.png" alt="SpacePod TestFlight">
+      </a>
+      <h3>SpacePod</h3>
+    </div>
+    
+    <div id="app">
+      <a href="https://testflight.apple.com/join/W5NjuUCk">
+        <img src="img/lights-on-off.png" alt="Lights On Off TestFlight">
+      </a>
+      <h3>Toggle</h3>
+    </div>
+    
+    <div id="app">
+      <a href="https://testflight.apple.com/join/tmpECD6h">
+        <img src="img/icon-creator.png" alt="Icon Creator TestFlight">
+      </a>
+      <h3>Icon Creator</h3>
+    </div>
+    
+    <div id="app">
+      <!-- <a href="https://testflight.apple.com/join/AJzHWXkA"> -->
+        <a href="/posts/HttpStatus/">
+        <img src="img/http-status.png" alt="HTTP Status TestFlight">
+      </a>
+      <h3>HTTP Status</h3>
+    </div>                                              
   </div>
 
   <div id="contact">
+    
+    <h2>👋 Hello! I'm <a href="/">kern</a>, the mobile developer behind <a href="/">kerntronics llc</a>.</h2>
 
-    <h1>Contact Me</h1>
-
-    <a href="https://twitter.com/kern">@kern</a>
-
+    <h2>Don't hesitate to ✉️ <a href="mailto: kernjackson@gmail.com">contact</a> me if you need help with 🏛 architecture, 👨‍🎨 design, 👨‍💻 development, 🦾 automation, or 👨‍🔬 testing for your 📱 iOS, 💻 macOS, 🍿 tvOS, ⌚️ watchOS, or 🚘 CarPlay app.</h2>
+    
+    <h2>Check out our 📰 <a href="https://kern.micro.blog">blog</a>, 🛰 <a href="https://kern.micro.blog/feed.xml">rss</a>, 🎥 <a href="https://www.youtube.com/channel/UCbmEPLoOn4qXm-XpZudWhjA">videos</a>, 🐣 <a href="https://twitter.com/kern">twitter</a>, or 🥸 <a href="/posts/privacy-policy/">privacy policy</a>.</h2>
+    
   </div>
-
-  <div id="privacy">
-
-    <h1>Privacy Policy</h1>
-
-    <h2>Philosophy</h2>
-    <ol>
-      <li>You have a fundamental right to privacy.</li>
-      <li>Your data is yours (not ours).</li>
-    </ol>
-
-    <h2>Policies</h2>
-    <ol>
-      <li>Currently we do not collect any data.</li>
-      <li>We will only collect data with your consent.</li>
-      <li>We will retain information only for as long as needed.</li>
-      <li>We will not share information with 3rd parties unless required by law.</li>
-      <li>We do not knowingly collect data about children.</li>
-      <li>This site will be updated as our policies evolve.</li>
-    </ol>
-
-  </div>
-
+  
 </body>
 
 </html>
