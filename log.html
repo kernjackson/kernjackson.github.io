@@ -4,16 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LOG</title>
+
+  <meta name="apple-itunes-app" content="app-id=1537672338">
   
   <style>
     
     * {
       box-sizing: border-box;
-      font-family: verdana;
+      font-family: system-ui;
     }
     
     html {
       font-size: calc(0.7em + 1vw)
+    }
+
+    /* .body-container {
+    overflow: clip;
+  } */
+
+  .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1em 1em 1em 1em;
     }
     
     .center {
@@ -71,11 +83,8 @@
     }
     
     .portrait {
-      height: 80%;
-      width: auto;;
-      /* box-shadow: 0 14px 18px 0 rgb(48, 209, 88); */
-      transition: 0.3s;
-      border-radius: 1cm;
+      height: auto;
+      width: 80%;
       margin: auto;
     }
     
@@ -113,22 +122,27 @@
   
   <h2>A modern take on a classic</h2>
   
-  
+  <div class="flex-container">
+    
+  <ul>
+    <p>🏆 23 levels with 2<sup>23</sup> (8,388,608) puzzles to solve</p>
+    <p>🔋 Free to play and no ads</p>
+    <p>🎛️ Baudy dial-up Synthesizer</p>
+    <p>7 different color schemes with matching icons</p>
+    <p>See your solved puzzle history</p>
+  </ul>
+
   <div class="portrait">
-    <img src="images/log-mac-screenshot-1.webp" alt="LOG Screenshot" class="center">
+    <img src="images/log-red-settings.png" alt="LOG Screenshot" class="center">
   </div>
+</div>
+  
   
   
   
   <img src="images/log-23-levels.webp" alt="23 Levels">
   
-  <ul>
-    <li>2<sup>23</sup> levels for 8,388,608 puzzles to solve</li>
-    <li>Free to play and ad-free (doesn't drain your pocket or your battery)</li>
-    <li>Baudy dial-up Synthesizer</li>
-    <li>7 different color schemes with matching icons</li>
-    <li>See your solved puzzle history</li>
-  </ul>
+  
   
   2<sup>23</sup> levels for 8,388,608 puzzles to solve
   <p>Free to play and ad-free (doesn't drain your pocket or your battery)</p>
@@ -136,20 +150,6 @@
   <img src="images/log-colors.webp" alt="23 Levels">
   <p>7 different color schemes with matching icons</p>
   <p>See your solved puzzle history</p>
-  
-  <!-- add these reviews back later 
-    <div class="card">
-      <h3>A new classic</h3>
-      <p>A beautiful take on a classic game - simple concept, but at times can be maddening. You'll be hooked!</p>
-      <p>walkernyranger</p>
-      <p>⭐️⭐️⭐️⭐️⭐️</p>
-    </div>
-    <div class="card">
-      <h3>Great casual gameplay</h3>
-      <p>Really well built app and fun too!</p>
-      <p>thatvirtualboy</p>
-      <p>⭐️⭐️⭐️⭐️⭐️</p>
-    </div> -->
     
   </body>
   </html>
