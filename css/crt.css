@@ -1,0 +1,66 @@
+    /* CRT */
+    
+    @keyframes scan-line {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 0 100%;
+      }
+    }
+    
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+      }
+      20%, 24%, 55% {
+        opacity: 0.5;
+      }
+    }
+    
+    @keyframes glow-animation {
+      from {
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+        /* box-shadow: 0 0 5px rgba(255, 0, 0, 0.5), 0 0 5px rgba(0, 255, 0, 0.5), 0 0 5px rgba(0, 0, 255, 0.5); */
+      }
+      to {
+        text-shadow: 0 0 12px rgba(255, 255, 255, 0.75);
+        /* box-shadow: 0 0 10px rgba(255, 0, 0, 0.75), 0 0 10px rgba(0, 255, 0, 0.75), 0 0 10px rgba(0, 0, 255, 0.75); */
+      }
+    }
+    
+    .crt-effect {
+      /* Scan lines */
+      background: repeating-linear-gradient(
+      horizontal,
+      transparent,
+      transparent px,
+      rgba(0, 0, 0, 0.1) 1px,
+      rgba(0, 0, 0, 0.1) 2px
+      );
+      
+      /* Full height and overlay */
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+      
+      /* Scan lines effect */
+      background: linear-gradient(rgb(0, 0, 0) 0.25px, transparent 0.5px);
+      background-size: 100% 2px;
+      
+      /* Animation */
+      /* animation: scanline 2s linear infinite; */
+
+      
+      /* Glow */
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+      
+      /* Slight RGB shift for chromatic aberration */
+      /* box-shadow: 0 0 5px rgba(255, 0, 0, 0.5), 0 0 5px rgba(0, 255, 0, 0.5), 0 0 5px rgba(0, 0, 255, 0.5); */
+      
+      /* Apply a slight skew to simulate distortion */
+      /* transform: skewX(-1deg); */
+
+      
+      animation: scan-line 2s linear infinite, flicker 2s linear infinite, glow-animation 3s ease-in-out infinite alternate;
+    }
